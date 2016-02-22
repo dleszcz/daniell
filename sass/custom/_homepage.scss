@@ -1,0 +1,151 @@
+body {
+    background: $main-color;
+    color: $white;
+    font-family: 'Raleway';
+}
+
+nav {
+    background: lighten($main-color, 10%);
+    height: 80px;
+
+    .nav {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin-top: 20px;
+            float: none;
+
+            a {
+                background: none;
+                border-radius: 0;
+                color: $light-text;
+                font-weight: 700;
+                text-shadow: 1px 1px black;
+
+                &:hover {
+                    background: $second-color;
+                }
+
+                &:focus,
+                &:active{
+                    background: none;
+                }
+            }
+
+            &.active {
+                a {
+                    background: none;
+                    border-bottom: 2px solid $second-color;
+                    color: lighten($light-text, 10%);
+
+                    &:hover {
+                        background: none;
+                    }
+
+                    &:focus,
+                    &:active{
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+header {
+    height: 320px;
+    color: $light-text;
+    font-size: 26px;
+    margin: 100px 0 0 0;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+
+    .btn-main {
+        border-radius: 0;
+        border: 2px solid $second-color;
+        color: $white;
+        margin-top:20px;
+
+        &:hover {
+            background: $second-color;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+
+section {
+
+    background: darken($main-color, 10%);
+    border-top: 1px solid lighten($main-color, 20%);
+    height: 900px;
+
+    p {
+        font-size: 18px;
+        padding: 30px;
+        text-align: center;
+
+        a {
+            color: $second-color;
+            border-bottom: .08em solid $second-color;
+            padding-bottom: .08em;
+
+            &:hover,
+            &:focus {
+                background: $white;
+                color: lighten($second-color, 5%);
+                border-bottom: .08em solid lighten($second-color, 5%);
+                text-decoration: none;
+            }
+        }
+    }
+
+    h1 {
+        color: $white;
+        font-size: 24px;
+        font-weight: 700;
+
+        &:after {
+            color: $second-color;
+            content: '.';
+        }
+    }
+}
+
+footer {
+    color: $white;
+    height: 60px;
+
+    ul {
+        list-style-type: none;
+        margin-top: 20px;
+        text-align: center;
+
+        li {
+            display: inline;
+            font-size: 17px;
+            padding: 10px;
+
+            a {
+                color: darken($main-color, 10%);
+
+                &:hover {
+                    text-decoration: none;
+                    transition: 1s;
+
+                    .fa-facebook {
+                        color: #3B5998;
+                    }
+                    .fa-github {
+                        color: $black;
+                    }
+                    .fa-linkedin {
+                        color: #007bb5;
+                    }
+                }
+            }
+        }
+    }
+}
