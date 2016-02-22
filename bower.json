@@ -1,0 +1,24 @@
+{
+  "name": "my-website",
+  "homepage": "https://github.com/dljs/my-website",
+  "authors": [
+    "danielxleszczynski@gmail.com"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6",
+    "bootstrap": "~3.3.6",
+    "components-font-awesome": "~4.5.0",
+    "gulp": "~3.9.1"
+  }
+}

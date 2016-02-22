@@ -7978,6 +7978,8 @@ section {
       color: #27A79A;
       content: '.';
       font-size: 36px; }
+  section#contact {
+    height: 840px; }
 
 footer {
   color: #ffffff;
