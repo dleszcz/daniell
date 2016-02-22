@@ -7928,6 +7928,21 @@ nav {
           background: none; }
         nav .nav li.active a:focus, nav .nav li.active a:active {
           background: none; }
+  nav .theme-change {
+    right: 20px;
+    position: absolute;
+    top: 20px; }
+    nav .theme-change .fa {
+      color: #D4D4D4;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px; }
+      nav .theme-change .fa.fa-moon-o {
+        background: #3e424a;
+        color: #bbbbbb; }
+      nav .theme-change .fa.fa-sun-o {
+        background: #bbbbbb;
+        color: #101012; }
 
 header {
   height: 320px;
@@ -7937,15 +7952,6 @@ header {
   padding: 10px;
   text-align: center;
   text-shadow: 1px 1px black; }
-  header .btn-main {
-    border-radius: 0;
-    border: 2px solid #27A79A;
-    color: #ffffff;
-    margin-top: 20px; }
-    header .btn-main:hover {
-      background: #27A79A;
-      color: #ffffff;
-      text-decoration: none; }
 
 section {
   background: #101012;
@@ -7970,7 +7976,8 @@ section {
     font-weight: 700; }
     section h1:after {
       color: #27A79A;
-      content: '.'; }
+      content: '.';
+      font-size: 36px; }
 
 footer {
   color: #ffffff;
@@ -7995,8 +8002,11 @@ footer {
           footer ul li a:hover .fa-linkedin {
             color: #007bb5; }
 
+.item {
+  border-bottom: 1px solid #27A79A;
+  padding: 30px; }
+
 .metrics {
-  height: 400px;
   margin: 40px auto 0;
   width: 60%; }
   .metrics img {
@@ -8018,3 +8028,47 @@ footer {
         text-align: right; }
       .metrics table td ul {
         background: #27A79A; }
+
+.skills {
+  margin-top: 80px; }
+  .skills h3 {
+    text-align: center; }
+    .skills h3:before, .skills h3:after {
+      color: #27A79A;
+      content: '/';
+      padding: 0 10px; }
+  .skills ul {
+    list-style-type: none; }
+    .skills ul li {
+      padding: 6px; }
+      .skills ul li:before {
+        color: #27A79A;
+        content: ' - '; }
+
+.field {
+  margin-top: 20px;
+  text-align: center; }
+  .field h5 {
+    text-align: left; }
+  .field textarea {
+    background: none;
+    border: 1px solid #27A79A;
+    height: 200px;
+    padding: 20px;
+    width: 100%; }
+  .field input {
+    background: none;
+    border: 1px solid #27A79A;
+    height: 40px;
+    padding: 20px;
+    width: 100%; }
+
+.btn-main {
+  border-radius: 0;
+  border: 1px solid #27A79A;
+  color: #ffffff;
+  margin-top: 20px; }
+  .btn-main:hover {
+    background: #27A79A;
+    color: #ffffff;
+    text-decoration: none; }

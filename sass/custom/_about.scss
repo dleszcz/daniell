@@ -1,5 +1,4 @@
 .metrics {
-    height: 400px;
     margin: 40px auto 0;
     width: 60%;
 
@@ -28,6 +27,34 @@
 
             ul {
                 background: $second-color;
+            }
+        }
+    }
+}
+
+.skills {
+    margin-top: 80px;
+
+    h3 {
+        text-align: center;
+
+        &:before,
+        &:after{
+            color: $second-color;
+            content: '/';
+            padding: 0 10px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            padding: 6px;
+
+            &:before {
+                color: $second-color;
+                content: ' - ';
             }
         }
     }

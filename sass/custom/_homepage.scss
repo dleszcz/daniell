@@ -51,6 +51,29 @@ nav {
             }
         }
     }
+
+    .theme-change {
+        right: 20px;
+        position: absolute;
+        top: 20px;
+
+        .fa {
+            color: $light-text;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+
+            &.fa-moon-o {
+                background: lighten($main-color, 10%);
+                color: darken($light-text, 10%);
+            }
+
+            &.fa-sun-o {
+                background: darken($light-text, 10%);
+                color: darken($main-color, 10%);
+            }
+        }
+    }
 }
 
 header {
@@ -61,19 +84,6 @@ header {
     padding: 10px;
     text-align: center;
     text-shadow: 1px 1px black;
-
-    .btn-main {
-        border-radius: 0;
-        border: 2px solid $second-color;
-        color: $white;
-        margin-top:20px;
-
-        &:hover {
-            background: $second-color;
-            color: $white;
-            text-decoration: none;
-        }
-    }
 }
 
 section {
@@ -110,6 +120,7 @@ section {
         &:after {
             color: $second-color;
             content: '.';
+            font-size: 36px;
         }
     }
 }
@@ -148,4 +159,9 @@ footer {
             }
         }
     }
+}
+
+.item {
+    border-bottom: 1px solid $second-color;
+    padding: 30px;
 }

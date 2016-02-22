@@ -1,0 +1,12 @@
+.btn-main {
+    border-radius: 0;
+    border: 1px solid $second-color;
+    color: $white;
+    margin-top: 20px;
+
+    &:hover {
+      background: $second-color;
+      color: $white;
+      text-decoration: none;
+    }
+}
