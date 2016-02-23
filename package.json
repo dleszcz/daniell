@@ -7,7 +7,9 @@
   "dependencies": {
     "express": "~4.13.3",
     "node": "0.0.0",
-    "ejs": "~2.4.1"
+    "ejs": "~2.4.1",
+    "gulp": "~3.9.1",
+    "gulp-sass": "~2.2.0"
   },
   "engines": {
     "node": "0.12.7"
