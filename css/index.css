@@ -7903,7 +7903,11 @@ body {
 
 nav {
   background: #3e424a;
-  height: 80px; }
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999; }
   nav .nav {
     text-align: center; }
     nav .nav li {
@@ -7945,13 +7949,14 @@ nav {
         color: #101012; }
 
 header {
-  height: 320px;
+  height: 400px;
   color: #D4D4D4;
   font-size: 26px;
-  margin: 100px 0 0 0;
   padding: 10px;
   text-align: center;
   text-shadow: 1px 1px black; }
+  header p {
+    padding-top: 140px; }
 
 section {
   background: #101012;

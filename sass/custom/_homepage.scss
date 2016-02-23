@@ -7,6 +7,10 @@ body {
 nav {
     background: lighten($main-color, 10%);
     height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
 
     .nav {
         text-align: center;
@@ -77,13 +81,16 @@ nav {
 }
 
 header {
-    height: 320px;
+    height: 400px;
     color: $light-text;
     font-size: 26px;
-    margin: 100px 0 0 0;
     padding: 10px;
     text-align: center;
     text-shadow: 1px 1px black;
+
+    p {
+        padding-top: 140px;
+    }
 }
 
 section {
