@@ -21,7 +21,7 @@ $(document).ready(function() {
     $(document).on("scroll", onScroll);
 
     //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
+    $('.nav a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
 

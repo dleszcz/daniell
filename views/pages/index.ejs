@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Daniel Leszczyński my website</title>
-    <!-- TODO: css to public-->
-    <link type="text/css" rel="stylesheet" href="css/index.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,900' rel='stylesheet' type='text/css'>
+    <% include ../partials/header.ejs %>
 </head>
 <body>
 <nav>
@@ -42,9 +38,6 @@
         </p>
     </div>
 </header>
-
-<!--TODO partials-->
-<% include ../partials/header.ejs %>
 
 <section id="about">
     <div class="container">
@@ -212,24 +205,27 @@
     <div class="container">
         <h1>Contact</h1>
 
-        <div class="col-xs-offset-3 col-xs-6 field">
-            <h5>Message</h5>
-            <textarea></textarea>
-        </div>
+        <form method="post" action="contact/send">
 
-        <div class="col-xs-offset-3 col-xs-6 field">
-            <h5>Name</h5>
-            <input/>
-        </div>
+            <div class="col-xs-offset-3 col-xs-6 field">
+                <h5>Message</h5>
+                <textarea type="text" name="message"></textarea>
+            </div>
 
-        <div class="col-xs-offset-3 col-xs-6 field">
-            <h5>Email adress</h5>
-            <input/>
-        </div>
+            <div class="col-xs-offset-3 col-xs-6 field">
+                <h5>Name</h5>
+                <input type="text" name="name"/>
+            </div>
 
-        <div class="col-xs-offset-3 col-xs-6 field">
-            <a href="#" class="btn btn-main pull-right">Send</a>
-        </div>
+            <div class="col-xs-offset-3 col-xs-6 field">
+                <h5>Email adress</h5>
+                <input type="email" name="email"/>
+            </div>
+
+            <div class="col-xs-offset-3 col-xs-6 field">
+                <button class="btn btn-main pull-right">Send</button>
+            </div>
+        </form>
 
     </div>
 </section>
