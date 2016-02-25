@@ -133,6 +133,15 @@ section {
 
     &#contact {
         height: 840px;
+
+        .btn-send {
+            background: none;
+            padding: 10px 30px;
+
+            &:hover {
+                background: $second-color;
+            }
+        }
     }
 }
 

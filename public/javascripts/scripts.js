@@ -41,6 +41,46 @@ $(document).ready(function() {
             $(document).on("scroll", onScroll);
         });
     });
+
+    $("form[ajax=true]").submit(function(e) {
+
+        e.preventDefault();
+
+        var form_data = $(this).serialize();
+        var form_url = $(this).attr("action");
+        var form_method = $(this).attr("method").toUpperCase();
+
+        $.ajax({
+            url: form_url,
+            type: form_method,
+            data: form_data,
+            cache: false,
+            success: function(response, data, status){
+
+                $('textarea[name="message"]').val('');
+                $('input[name="name"]', 'form').val('');
+                $('input[name="email"]', 'form').val('');
+                $(".submit-field").append("<span class='info'>Tank you for a message!</span>");
+
+                setTimeout(function(){
+                    $('span.info').remove();
+                }, 5000);
+            },
+            error: function(response, data, status){
+
+                $('textarea[name="message"]').val('');
+                $('input[name="name"]', 'form').val('');
+                $('input[name="email"]', 'form').val('');
+                $(".submit-field").append("<span class='info'>Something were wrong :( </span>");
+
+                setTimeout(function(){
+                    $('span.info').remove();
+                }, 5000);
+            }
+        });
+
+    });
+
 });
 
 function onScroll(event){

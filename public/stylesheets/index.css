@@ -7985,6 +7985,11 @@ section {
       font-size: 36px; }
   section#contact {
     height: 840px; }
+    section#contact .btn-send {
+      background: none;
+      padding: 10px 30px; }
+      section#contact .btn-send:hover {
+        background: #27A79A; }
 
 footer {
   color: #ffffff;
@@ -8057,18 +8062,27 @@ footer {
   text-align: center; }
   .field h5 {
     text-align: left; }
-  .field textarea {
+  .field textarea,
+  .field input,
+  .field button {
     background: none;
-    border: 1px solid #27A79A;
+    border: 1px solid #27A79A; }
+  .field textarea {
     height: 200px;
     padding: 20px;
     width: 100%; }
-  .field input {
-    background: none;
-    border: 1px solid #27A79A;
+  .field input[name="email"], .field input[name="name"] {
     height: 40px;
     padding: 20px;
     width: 100%; }
+  .field button {
+    float: right;
+    padding: 8px 16px; }
+    .field button:hover {
+      background: #27A79A; }
+  .field.submit-field span {
+    bottom: 10px;
+    position: absolute; }
 
 .btn-main {
   border-radius: 0;
