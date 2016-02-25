@@ -1,254 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <% include ../partials/header.ejs %>
+        <% include ../partials/head.ejs %>
     </head>
     <body>
         <nav>
-            <div class="container">
-                <ul class="nav nav-pills">
-                    <li class="active">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li><a href="#about">About me</a></li>
-                    <!--<li><a href="#projects">Projects</a></li>-->
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!--
-            <span class><i class="fa fa-cog"></i></span>
-            <div class="theme-change">
-                <span><i class="fa fa-moon-o"></i></span>
-                <span><i class="fa fa-sun-o"></i></span>
-            </div>
-            <div class="language-change">
-                <span>EN</span>
-                <span>PL</span>
-            </div>-->
-
+            <% include ../partials/nav.ejs %>
         </nav>
         <header id="home">
-            <div class="container">
-                <p>
-                    Hi, I'm Daniel Leszczyński<br>
-                    Front End Developer <br>
-                    <a href="#contact" class="btn btn-main">Contact me</a>
-                </p>
-            </div>
+            <% include ../partials/header.ejs %>
         </header>
 
         <section id="about">
-            <div class="container">
-                <h1>About me</h1>
-                <p>I live in Poznań, and I like front end development. Outside programming in JavaScript I am interested in <a href="http://lastfm.pl/user/dkl_">music</a>, football and travels.</p>
-
-                <div class="metrics">
-                    <div class="col-xs-12 col-md-5">
-                        <table>
-                            <tr>
-                                <td class="property">Age</td>
-                                <td>24</td>
-                            </tr>
-                            <tr>
-                                <td class="property">City</td>
-                                <td>Poznań (Poland)</td>
-                            </tr>
-                            <tr>
-                                <td class="property">Email</td>
-                                <td>danielxleszczynski@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td class="property">Phone</td>
-                                <td>609 525 935</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-xs-12 col-md-7">
-                        <img src="images/12381154_1014938251911956_10753622_o.jpg" alt=""/>
-                    </div>
-                </div>
-
-                <div class="skills col-xs-12">
-
-                    <div class="col-xs-4">
-                        <h3>Languages</h3>
-
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS / SASS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <h3>Frameworks</h3>
-
-                        <ul>
-                            <li>
-                                jQuery
-                            </li>
-                            <li>
-                                Twitter Bootstrap
-                            </li>
-                            <li>
-                                AJAX
-                            </li>
-                            <li>
-                                AngularJS
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <h3>Other</h3>
-
-                        <ul>
-                            <li>
-                                Gulp
-                            </li>
-                            <li>
-                                SQL
-                            </li>
-                            <li>
-                                OOP
-                            </li>
-                            <li>
-                                WebStorm / PhpStorm
-                            </li>
-                            <li>
-                                Bitbucket / Github
-                            </li>
-                            <li>
-                                Jira
-                            </li>
-                            <li>
-                                actually learn technologies like nodeJS, ES6 and BEM.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+            <% include ../partials/about.ejs %>
         </section>
-        <!--<section id="projects">
-            <div class="container">
-                <h1>Projects</h1>
 
-            </div>
-        </section>-->
         <section id="experience">
-            <div class="container">
-                <h1>Experience</h1>
-
-                <div class="col-xs-12 item">
-                    <div class="col-xs-offset-3 col-xs-3">
-                        <h4>april 2015 - present</h4>
-                    </div>
-                    <div class="col-xs-3">
-                        <h4>Redexperts</h4>
-                        <br>
-                        Junior Front End Developer
-                    </div>
-                </div>
-
-                <div class="col-xs-12 item">
-                    <div class="col-xs-offset-3 col-xs-3">
-                        <h4>may 2015 - december 2015</h4>
-                    </div>
-                    <div class="col-xs-3">
-                        <h4>eCreo Multimedia</h4>
-                        <br>
-                        Intern PHP/Front End Developer
-                    </div>
-                </div>
-
-                <div class="col-xs-12 item">
-                    <div class="col-xs-offset-3 col-xs-3">
-                        <h4>october 2014 - december 2014</h4>
-                    </div>
-                    <div class="col-xs-3">
-                        <h4>widzialni.pl</h4>
-                        <br>
-                        Intern SEO Assistant
-                    </div>
-                </div>
-            </div>
+            <% include ../partials/experience.ejs %>
         </section>
+
         <section id="education">
-            <div class="container">
-                <h1>Education</h1>
-                <div class="col-xs-12 item">
-                    <div class="col-xs-offset-3 col-xs-3">
-                        <h4>september 2012 - february 2016</h4>
-                    </div>
-                    <div class="col-xs-3">
-                        <h4>Poznan University of Technology</h4>
-                        <br>
-                        IT Engineer
-                    </div>
-                </div>
-                <div class="col-xs-12 item">
-                    <div class="col-xs-offset-3 col-xs-3">
-                        <h4>september 2008 - july 2012</h4>
-                    </div>
-                    <div class="col-xs-3">
-                        <h4>Electrical High School in Włocławek</h4>
-                        <br>
-                        IT Technician
-                    </div>
-                </div>
-            </div>
+            <% include ../partials/education.ejs %>
         </section>
+
         <section id="contact">
-            <div class="container">
-                <h1>Contact</h1>
-
-                <form method="post" action="/send" ajax="true">
-
-                    <div class="col-xs-offset-3 col-xs-6 field">
-                        <h5>Message</h5>
-                        <textarea type="text" name="message" placeholder="Send me something :)" required></textarea>
-                    </div>
-
-                    <div class="col-xs-offset-3 col-xs-6 field">
-                        <h5>Name</h5>
-                        <input type="text" name="name" placeholder="Your name" required/>
-                    </div>
-
-                    <div class="col-xs-offset-3 col-xs-6 field">
-                        <h5>Email adress</h5>
-                        <input type="email" name="email" placeholder="Your email adress" required/>
-                    </div>
-
-                    <div class="col-xs-offset-3 col-xs-6 field submit-field">
-                        <button type="submit" name="submit"> Send </button>
-                    </div>
-                </form>
-
-            </div>
+            <% include ../partials/contact.ejs %>
         </section>
+
         <footer>
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/leszczynskidaniel">
-                            <span class="fa fa-facebook"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/daniel-leszczy%C5%84ski-2a35b210a">
-                            <span class="fa fa-linkedin"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/dljs">
-                            <span class="fa fa-github"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <% include ../partials/footer.ejs %>
         </footer>
     </body>
 

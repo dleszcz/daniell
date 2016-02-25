@@ -1,22 +1,18 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var ejs = require('ejs');
-var nodemailer = require('nodemailer');
-var config = require('./config');
+var express = require('express'),
+    bodyParser = require('body-parser'),
+    ejs = require('ejs'),
+    nodemailer = require('nodemailer'),
+    config = require('./config'),
+    app = express();
 
-var app = express();
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
-
-app.set('port', (process.env.PORT || 2222));
-
+app.set('port', (process.env.PORT || 1234));
 app.use(express.static(__dirname + '/public'));
-
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-
 app.get('/', function(request, response) {
     response.render('pages/index');
 });
@@ -29,9 +25,9 @@ app.post('/send', function(req, res) {
             user: config.mail.name,
             pass: config.mail.password
         }
-    });
+    }),
 
-    var mailOptions = {
+    mailOptions = {
         from: config.mail.from,
         to: config.mail.to,
         subject: config.mail.subject,
@@ -48,7 +44,6 @@ app.post('/send', function(req, res) {
             res.end('OK');
         }
     });
-
 });
 
 app.listen(app.get('port'), function() {
