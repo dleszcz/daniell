@@ -18,6 +18,7 @@
   },
   "keywords": [
     "node",
+    "heroku"
   ],
   "license": "MIT"
 }
