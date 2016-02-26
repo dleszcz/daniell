@@ -8067,19 +8067,22 @@ footer {
   .field textarea,
   .field input,
   .field button {
+    color: #ffffff;
     background: none;
     border: 1px solid #27A79A; }
-    .field textarea:-webkit-autofill,
-    .field input:-webkit-autofill,
-    .field button:-webkit-autofill {
-      -webkit-box-shadow: 0 0 0 1000px #101012 inset; }
+    .field textarea:focus, .field textarea:active,
+    .field input:focus,
+    .field input:active,
+    .field button:focus,
+    .field button:active {
+      color: #ffffff; }
   .field textarea {
     height: 200px;
     padding: 20px;
     width: 100%; }
   .field input[name="email"], .field input[name="name"] {
     height: 40px;
-    padding: 20px;
+    padding: 0 10px;
     width: 100%; }
   .field button {
     float: right;

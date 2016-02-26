@@ -9,11 +9,13 @@
     textarea,
     input,
     button {
+        color: $white;
         background: none;
         border: 1px solid $second-color;
 
-        &:-webkit-autofill {
-            -webkit-box-shadow: 0 0 0 1000px darken($main-color, 10%) inset;
+        &:focus,
+        &:active {
+            color: $white;
         }
     }
 
@@ -27,7 +29,7 @@
         &[name="email"],
         &[name="name"] {
             height: 40px;
-            padding: 20px;
+            padding: 0 10px;
             width: 100%;
         }
     }
