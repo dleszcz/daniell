@@ -8069,6 +8069,10 @@ footer {
   .field button {
     background: none;
     border: 1px solid #27A79A; }
+    .field textarea:-webkit-autofill,
+    .field input:-webkit-autofill,
+    .field button:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px #101012 inset; }
   .field textarea {
     height: 200px;
     padding: 20px;

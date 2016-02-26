@@ -11,6 +11,10 @@
     button {
         background: none;
         border: 1px solid $second-color;
+
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px darken($main-color, 10%) inset;
+        }
     }
 
     textarea {
