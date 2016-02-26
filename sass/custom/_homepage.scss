@@ -96,7 +96,7 @@ header {
 section {
 
     background: darken($main-color, 10%);
-    border-top: 1px solid lighten($main-color, 20%);
+    border-top: 1px solid $main-color;
     height: 900px;
 
     p {

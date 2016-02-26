@@ -42,7 +42,7 @@ $(document).ready(function() {
         });
     });
 
-    $("form[ajax=true]").submit(function(e) {
+    $("#contact form").submit(function(e) {
 
         e.preventDefault();
 

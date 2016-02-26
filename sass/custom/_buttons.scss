@@ -5,8 +5,12 @@
     margin-top: 20px;
 
     &:hover {
-      background: $second-color;
-      color: $white;
-      text-decoration: none;
+        background: $second-color;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &:focus {
+        color: $white;
     }
 }

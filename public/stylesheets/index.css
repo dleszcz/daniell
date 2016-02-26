@@ -7960,7 +7960,7 @@ header {
 
 section {
   background: #101012;
-  border-top: 1px solid #565a65;
+  border-top: 1px solid #27292E;
   height: 900px; }
   section p {
     font-size: 18px;
@@ -8031,8 +8031,10 @@ footer {
     .metrics table td {
       border: 2px solid #101012;
       color: #D4D4D4;
+      max-width: 150px;
       padding: 10px;
-      text-align: left; }
+      text-align: left;
+      word-wrap: break-word; }
       .metrics table td.property {
         background: #27A79A;
         color: white;
@@ -8093,3 +8095,5 @@ footer {
     background: #27A79A;
     color: #ffffff;
     text-decoration: none; }
+  .btn-main:focus {
+    color: #ffffff; }
