@@ -7901,119 +7901,6 @@ body {
   color: #ffffff;
   font-family: 'Raleway'; }
 
-nav {
-  background: #3e424a;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999999; }
-  nav .nav {
-    text-align: center; }
-    nav .nav li {
-      display: inline-block;
-      margin-top: 20px;
-      float: none; }
-      nav .nav li a {
-        background: none;
-        border-radius: 0;
-        color: #D4D4D4;
-        font-weight: 700;
-        text-shadow: 1px 1px black; }
-        nav .nav li a:hover {
-          background: #27A79A; }
-        nav .nav li a:focus, nav .nav li a:active {
-          background: none; }
-      nav .nav li.active a {
-        background: none;
-        border-bottom: 2px solid #27A79A;
-        color: #eeeeee; }
-        nav .nav li.active a:hover {
-          background: none; }
-        nav .nav li.active a:focus, nav .nav li.active a:active {
-          background: none; }
-  nav .theme-change {
-    right: 20px;
-    position: absolute;
-    top: 20px; }
-    nav .theme-change .fa {
-      color: #D4D4D4;
-      font-size: 18px;
-      font-weight: 600;
-      padding: 10px; }
-      nav .theme-change .fa.fa-moon-o {
-        background: #3e424a;
-        color: #bbbbbb; }
-      nav .theme-change .fa.fa-sun-o {
-        background: #bbbbbb;
-        color: #101012; }
-
-header {
-  height: 400px;
-  color: #D4D4D4;
-  font-size: 26px;
-  padding: 10px;
-  text-align: center;
-  text-shadow: 1px 1px black; }
-  header p {
-    padding-top: 140px; }
-
-section {
-  background: #101012;
-  border-top: 1px solid #27292E;
-  height: 900px; }
-  section p {
-    font-size: 18px;
-    padding: 30px;
-    text-align: center; }
-    section p a {
-      color: #27A79A;
-      border-bottom: 0.08em solid #27A79A;
-      padding-bottom: .08em; }
-      section p a:hover, section p a:focus {
-        background: #ffffff;
-        color: #2cbcad;
-        border-bottom: 0.08em solid #2cbcad;
-        text-decoration: none; }
-  section h1 {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 700; }
-    section h1:after {
-      color: #27A79A;
-      content: '.';
-      font-size: 36px; }
-  section#contact {
-    height: 840px; }
-    section#contact .btn-send {
-      background: none;
-      padding: 10px 30px; }
-      section#contact .btn-send:hover {
-        background: #27A79A; }
-
-footer {
-  color: #ffffff;
-  height: 60px; }
-  footer ul {
-    list-style-type: none;
-    margin-top: 20px;
-    text-align: center; }
-    footer ul li {
-      display: inline;
-      font-size: 17px;
-      padding: 10px; }
-      footer ul li a {
-        color: #101012; }
-        footer ul li a:hover {
-          text-decoration: none;
-          transition: 1s; }
-          footer ul li a:hover .fa-facebook {
-            color: #3B5998; }
-          footer ul li a:hover .fa-github {
-            color: #000000; }
-          footer ul li a:hover .fa-linkedin {
-            color: #007bb5; }
-
 .item {
   border-bottom: 1px solid #27A79A;
   padding: 30px; }
@@ -8031,7 +7918,7 @@ footer {
     .metrics table td {
       border: 2px solid #101012;
       color: #D4D4D4;
-      max-width: 150px;
+      max-width: 240px;
       padding: 10px;
       text-align: left;
       word-wrap: break-word; }
@@ -8104,3 +7991,116 @@ footer {
     text-decoration: none; }
   .btn-main:focus {
     color: #ffffff; }
+
+nav {
+  background: #3e424a;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999; }
+  nav .nav {
+    text-align: center; }
+    nav .nav li {
+      display: inline-block;
+      margin-top: 20px;
+      float: none; }
+      nav .nav li a {
+        background: none;
+        border-radius: 0;
+        color: #D4D4D4;
+        font-weight: 700;
+        text-shadow: 1px 1px black; }
+        nav .nav li a:hover {
+          background: #27A79A; }
+        nav .nav li a:focus, nav .nav li a:active {
+          background: none; }
+      nav .nav li.active a {
+        background: none;
+        border-bottom: 2px solid #27A79A;
+        color: #eeeeee; }
+        nav .nav li.active a:hover {
+          background: none; }
+        nav .nav li.active a:focus, nav .nav li.active a:active {
+          background: none; }
+  nav .theme-change {
+    right: 20px;
+    position: absolute;
+    top: 20px; }
+    nav .theme-change .fa {
+      color: #D4D4D4;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px; }
+      nav .theme-change .fa.fa-moon-o {
+        background: #3e424a;
+        color: #bbbbbb; }
+      nav .theme-change .fa.fa-sun-o {
+        background: #bbbbbb;
+        color: #101012; }
+
+section {
+  background: #101012;
+  height: auto;
+  padding-bottom: 60px; }
+  section p {
+    font-size: 18px;
+    padding: 30px;
+    text-align: center; }
+    section p a {
+      color: #27A79A;
+      border-bottom: 0.08em solid #27A79A;
+      padding-bottom: .08em; }
+      section p a:hover, section p a:focus {
+        background: #ffffff;
+        color: #2cbcad;
+        border-bottom: 0.08em solid #2cbcad;
+        text-decoration: none; }
+  section h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700; }
+    section h1:after {
+      color: #27A79A;
+      content: '.';
+      font-size: 36px; }
+  section#contact {
+    height: 840px; }
+    section#contact .btn-send {
+      background: none;
+      padding: 10px 30px; }
+      section#contact .btn-send:hover {
+        background: #27A79A; }
+
+header {
+  height: 400px;
+  color: #D4D4D4;
+  font-size: 26px;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px black; }
+  header p {
+    padding-top: 140px; }
+
+footer {
+  color: #ffffff;
+  height: 60px; }
+  footer ul {
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: center; }
+    footer ul li {
+      display: inline;
+      font-size: 17px;
+      padding: 10px; }
+      footer ul li a {
+        color: #101012; }
+        footer ul li a:hover {
+          text-decoration: none;
+          transition: 1s; }
+          footer ul li a:hover .fa-facebook {
+            color: #3B5998; }
+          footer ul li a:hover .fa-github {
+            color: #000000; }
+          footer ul li a:hover .fa-linkedin {
+            color: #007bb5; }

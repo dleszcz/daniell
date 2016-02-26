@@ -37,8 +37,10 @@ $(document).ready(function() {
     $(document).on("scroll", onScroll);
 
     //smoothscroll
-    $('.nav a[href^="#"]').on('click', function (e) {
+    $('.nav a[href^="#"]').on('click', function () {
+/*
         e.preventDefault();
+*/
         $(document).off("scroll");
 
         $('a').each(function () {
@@ -50,6 +52,8 @@ $(document).ready(function() {
             menu = target;
         $target = $(target);
 
+        //TODO: na FF nie działa
+
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top + 2 - 80 + "px"
         }, 500, 'swing', function () {
@@ -58,9 +62,9 @@ $(document).ready(function() {
         });
     });
 
-    $("#contact form").submit(function(e) {
+    $("#contact form").submit(function() {
 
-        e.preventDefault();
+       /* e.preventDefault();*/
 
         var form_data = $(this).serialize(),
             form_url = $(this).attr("action"),

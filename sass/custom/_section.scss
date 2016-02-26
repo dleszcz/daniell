@@ -1,0 +1,50 @@
+section {
+    background: darken($main-color, 10%);
+    height: auto;
+    padding-bottom: 60px;
+
+    p {
+        font-size: 18px;
+        padding: 30px;
+        text-align: center;
+
+        a {
+            color: $second-color;
+            border-bottom: .08em solid $second-color;
+            padding-bottom: .08em;
+
+            &:hover,
+            &:focus {
+                background: $white;
+                color: lighten($second-color, 5%);
+                border-bottom: .08em solid lighten($second-color, 5%);
+                text-decoration: none;
+            }
+        }
+    }
+
+    h1 {
+        color: $white;
+        font-size: 24px;
+        font-weight: 700;
+
+        &:after {
+            color: $second-color;
+            content: '.';
+            font-size: 36px;
+        }
+    }
+
+    &#contact {
+        height: 840px;
+
+        .btn-send {
+            background: none;
+            padding: 10px 30px;
+
+            &:hover {
+                background: $second-color;
+            }
+        }
+    }
+}

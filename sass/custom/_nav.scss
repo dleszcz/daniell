@@ -1,0 +1,75 @@
+nav {
+    background: lighten($main-color, 10%);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+
+    .nav {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin-top: 20px;
+            float: none;
+
+            a {
+                background: none;
+                border-radius: 0;
+                color: $light-text;
+                font-weight: 700;
+                text-shadow: 1px 1px black;
+
+                &:hover {
+                    background: $second-color;
+                }
+
+                &:focus,
+                &:active{
+                    background: none;
+                }
+            }
+
+            &.active {
+                a {
+                    background: none;
+                    border-bottom: 2px solid $second-color;
+                    color: lighten($light-text, 10%);
+
+                    &:hover {
+                        background: none;
+                    }
+
+                    &:focus,
+                    &:active{
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .theme-change {
+        right: 20px;
+        position: absolute;
+        top: 20px;
+
+        .fa {
+            color: $light-text;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+
+            &.fa-moon-o {
+                background: lighten($main-color, 10%);
+                color: darken($light-text, 10%);
+            }
+
+            &.fa-sun-o {
+                background: darken($light-text, 10%);
+                color: darken($main-color, 10%);
+            }
+        }
+    }
+}
