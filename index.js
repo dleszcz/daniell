@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
-app.set('port', (process.env.PORT || 1772));
+app.set('port', (process.env.PORT || 7777));
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
@@ -41,7 +41,7 @@ app.post('/send', function(req, res) {
         } else {
             console.log('Email sent: ' + info.response);
             res.writeHead(200, {'Content-Type': 'text/plain'});
-            res.end('OK');
+            res.end();
         }
     });
 });
