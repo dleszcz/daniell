@@ -23,6 +23,11 @@
         height: 200px;
         padding: 20px;
         width: 100%;
+
+        &:required,
+        &:invalid {
+            box-shadow:none;
+        }
     }
 
     input {
@@ -31,6 +36,11 @@
             height: 40px;
             padding: 0 10px;
             width: 100%;
+        }
+
+        &:required,
+        &:invalid {
+            box-shadow:none;
         }
     }
 

@@ -1,4 +1,7 @@
 function onScroll(event){
+    console.log('działam!');
+    event.preventDefault();
+
     var scrollPos = $(document).scrollTop() + 85;
     $('.nav a').each(function () {
         var currLink = $(this);
@@ -15,6 +18,7 @@ function onScroll(event){
 }
 
 $(document).ready(function () {
+
 
     $('nav a').click(function () {
         $(document).off("scroll");
@@ -33,10 +37,15 @@ $(document).ready(function () {
             }
         }
     });
-    $(document).on("scroll", onScroll);
+
 });
 
-$("#contact form").submit(function() {
+$(document).on("scroll", onScroll);
+
+
+$("#contact form").submit(function (event) {
+
+    event.preventDefault();
 
     var form_data = $(this).serialize(),
         form_url = $(this).attr("action"),
@@ -48,8 +57,7 @@ $("#contact form").submit(function() {
         data: form_data,
         cache: false,
         success: function(response, data, status){
-
-            $('textarea[name="message"]').val('');
+            $('textarea[name="message"]', 'form').val('');
             $('input[name="name"]', 'form').val('');
             $('input[name="email"]', 'form').val('');
             $(".submit-field").append("<span class='info'>Tank you for a message!</span>");
@@ -60,7 +68,7 @@ $("#contact form").submit(function() {
         },
         error: function(response, data, status){
 
-            $('textarea[name="message"]').val('');
+            $('textarea[name="message"]', 'form').val('');
             $('input[name="name"]', 'form').val('');
             $('input[name="email"]', 'form').val('');
             $(".submit-field").append("<span class='info'>Something were wrong :( </span>");

@@ -1,3 +1,4 @@
+
 var express = require('express'),
     bodyParser = require('body-parser'),
     ejs = require('ejs'),
@@ -9,40 +10,43 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
-app.set('port', (process.env.PORT || 7777));
+app.set('port', (process.env.PORT || 1234));
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.get('/', function(request, response) {
+app.get('/', function (request, response) {
     response.render('pages/index');
 });
 
 app.post('/send', function(req, res) {
 
     var transporter = nodemailer.createTransport({
-        service: config.mail.service,
-        auth: {
-            user: config.mail.name,
-            pass: config.mail.password
-        }
-    }),
+            service: config.mail.service,
+            auth: {
+                user: config.mail.name,
+                pass: config.mail.password
+            }
+        }),
 
-    mailOptions = {
-        from: config.mail.from,
-        to: config.mail.to,
-        subject: config.mail.subject,
-        text: req.body.message,
-        html: '<b>Wiadomość:</b> ' + req.body.message + '<br>' + '<b>Imię:</b> ' + req.body.name + '<br>' + '<b>Email:</b> ' + req.body.email
-    };
+        mailOptions = {
+            from: config.mail.from,
+            to: config.mail.to,
+            subject: config.mail.subject,
+            text: req.body.message,
+            html: '<b>Wiadomość:</b>' + req.body.message + '<br>' + '<b>Imię:</b> ' + req.body.name + '<br>' + '<b>Email:</b> ' + req.body.email
+        };
 
     transporter.sendMail(mailOptions, function(error, info){
-        if(error){
-            return console.log(error);
+        if(error) {
+            res.status(400);
+            res.send();
+
         } else {
             console.log('Email sent: ' + info.response);
-            res.writeHead(200, {'Content-Type': 'text/plain'});
-            res.end();
+            res.status(200);
+            res.send();
         }
+        transporter.close();
     });
 });
 

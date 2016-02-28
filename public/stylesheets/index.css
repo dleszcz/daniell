@@ -7967,10 +7967,14 @@ body {
     height: 200px;
     padding: 20px;
     width: 100%; }
+    .field textarea:required, .field textarea:invalid {
+      box-shadow: none; }
   .field input[name="email"], .field input[name="name"] {
     height: 40px;
     padding: 0 10px;
     width: 100%; }
+  .field input:required, .field input:invalid {
+    box-shadow: none; }
   .field button {
     float: right;
     padding: 8px 16px; }
