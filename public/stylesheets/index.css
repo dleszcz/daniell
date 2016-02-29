@@ -7965,7 +7965,7 @@ body {
       color: #ffffff; }
   .field textarea {
     height: 200px;
-    padding: 20px;
+    padding: 10px;
     width: 100%; }
     .field textarea:required, .field textarea:invalid {
       box-shadow: none; }
@@ -8071,7 +8071,7 @@ section {
       content: '.';
       font-size: 36px; }
   section#contact {
-    height: 840px; }
+    height: 860px; }
     section#contact .btn-send {
       background: none;
       padding: 10px 30px; }
