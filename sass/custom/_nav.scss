@@ -1,74 +1,39 @@
 nav {
-    background: lighten($main-color, 10%);
+    background: darken($main-color, 1%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     height: 80px;
     position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 999999;
+    z-index: 99999;
 
-    .nav {
+    ul {
+        margin: 15px 0 0 0;
         text-align: center;
+        width: 100%;
 
         li {
             display: inline-block;
-            margin-top: 20px;
-            float: none;
+            list-style: none;
+            margin: 0 30px 0 0;
 
             a {
                 background: none;
-                border-radius: 0;
                 color: $light-text;
                 font-weight: 700;
-                text-shadow: 1px 1px black;
+                text-decoration: none;
+                line-height: 50px;
 
                 &:hover {
-                    background: $second-color;
+                    color: $second-color !important;
+                    text-decoration: none;
                 }
 
                 &:focus,
-                &:active{
-                    background: none;
-                }
-            }
-
-            &.active {
-                a {
-                    background: none;
-                    border-bottom: 2px solid $second-color;
+                &:active,
+                &:visited {
                     color: lighten($light-text, 10%);
-
-                    &:hover {
-                        background: none;
-                    }
-
-                    &:focus,
-                    &:active{
-                        background: none;
-                    }
+                    text-decoration: none;
                 }
-            }
-        }
-    }
-
-    .theme-change {
-        right: 20px;
-        position: absolute;
-        top: 20px;
-
-        .fa {
-            color: $light-text;
-            font-size: 18px;
-            font-weight: 600;
-            padding: 10px;
-
-            &.fa-moon-o {
-                background: lighten($main-color, 10%);
-                color: darken($light-text, 10%);
-            }
-
-            &.fa-sun-o {
-                background: darken($light-text, 10%);
-                color: darken($main-color, 10%);
             }
         }
     }

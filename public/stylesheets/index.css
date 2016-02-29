@@ -7963,6 +7963,22 @@ body {
     .field button:focus,
     .field button:active {
       color: #ffffff; }
+    .field textarea::-webkit-input-placeholder,
+    .field input::-webkit-input-placeholder,
+    .field button::-webkit-input-placeholder {
+      color: #d9d9d9; }
+    .field textarea::-moz-placeholder,
+    .field input::-moz-placeholder,
+    .field button::-moz-placeholder {
+      color: #d9d9d9; }
+    .field textarea:-ms-input-placeholder,
+    .field input:-ms-input-placeholder,
+    .field button:-ms-input-placeholder {
+      color: #d9d9d9; }
+    .field textarea:-moz-placeholder,
+    .field input:-moz-placeholder,
+    .field button:-moz-placeholder {
+      color: #d9d9d9; }
   .field textarea {
     height: 200px;
     padding: 10px;
@@ -7997,56 +8013,37 @@ body {
     color: #ffffff; }
 
 nav {
-  background: #3e424a;
+  background: #25272b;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   height: 80px;
   position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 999999; }
-  nav .nav {
-    text-align: center; }
-    nav .nav li {
+  z-index: 99999; }
+  nav ul {
+    margin: 15px 0 0 0;
+    text-align: center;
+    width: 100%; }
+    nav ul li {
       display: inline-block;
-      margin-top: 20px;
-      float: none; }
-      nav .nav li a {
+      list-style: none;
+      margin: 0 30px 0 0; }
+      nav ul li a {
         background: none;
-        border-radius: 0;
         color: #D4D4D4;
         font-weight: 700;
-        text-shadow: 1px 1px black; }
-        nav .nav li a:hover {
-          background: #27A79A; }
-        nav .nav li a:focus, nav .nav li a:active {
-          background: none; }
-      nav .nav li.active a {
-        background: none;
-        border-bottom: 2px solid #27A79A;
-        color: #eeeeee; }
-        nav .nav li.active a:hover {
-          background: none; }
-        nav .nav li.active a:focus, nav .nav li.active a:active {
-          background: none; }
-  nav .theme-change {
-    right: 20px;
-    position: absolute;
-    top: 20px; }
-    nav .theme-change .fa {
-      color: #D4D4D4;
-      font-size: 18px;
-      font-weight: 600;
-      padding: 10px; }
-      nav .theme-change .fa.fa-moon-o {
-        background: #3e424a;
-        color: #bbbbbb; }
-      nav .theme-change .fa.fa-sun-o {
-        background: #bbbbbb;
-        color: #101012; }
+        text-decoration: none;
+        line-height: 50px; }
+        nav ul li a:hover {
+          color: #27A79A !important;
+          text-decoration: none; }
+        nav ul li a:focus, nav ul li a:active, nav ul li a:visited {
+          color: #eeeeee;
+          text-decoration: none; }
 
 section {
   background: #101012;
   height: auto;
-  padding-bottom: 100px; }
+  padding-bottom: 200px; }
   section:nth-child(2n) {
     background: #141518; }
   section p {

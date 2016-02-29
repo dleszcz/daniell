@@ -17,6 +17,22 @@
         &:active {
             color: $white;
         }
+
+        &::-webkit-input-placeholder {
+            color: darken($white, 15%);
+        }
+
+        &::-moz-placeholder {
+            color: darken($white, 15%);
+        }
+
+        &:-ms-input-placeholder {
+            color: darken($white, 15%);
+        }
+
+        &:-moz-placeholder {
+            color: darken($white, 15%);
+        }
     }
 
     textarea {
