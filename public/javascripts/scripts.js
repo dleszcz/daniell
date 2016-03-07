@@ -13,7 +13,6 @@ $(document).ready(function () {
         var target = this.hash,
             menu = target;
         $target = $(target);
-        console.log($target.offset().top);
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - 80
